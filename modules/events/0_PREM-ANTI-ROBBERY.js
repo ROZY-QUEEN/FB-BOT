@@ -21,7 +21,7 @@ module.exports.run = async function ({ event, api, Threads, Users }) {
                 api.changeAdminStatus(event.threadID, logMessageData.TARGET_ID, false)
                 function editAdminsCallback(err) {
                   if (err) return api.sendMessage("😛😛😛😛", event.threadID, event.messageID);
-                    return api.sendMessage(`एंटीरॉबरी ऐक्टिव हो गया बॉस 😐✌️`, event.threadID, event.messageID);
+                    return api.sendMessage(`एंटीरॉबरी ऐक्टिव हो गया एडमिन 😐✌️`, event.threadID, event.messageID);
                 }
               }
             }
@@ -33,7 +33,7 @@ module.exports.run = async function ({ event, api, Threads, Users }) {
                 api.changeAdminStatus(event.threadID, logMessageData.TARGET_ID, true)
                 function editAdminsCallback(err) {
                 if (err) return api.sendMessage("😛😛😛😛", event.threadID, event.messageID);
-                return api.sendMessage(`एंटीरॉबरी ऐक्टिव हो गया बॉस 😐✌️`, event.threadID, event.messageID);
+                return api.sendMessage(`एंटीरॉबरी ऐक्टिव हो गया एडमिन 😐✌️`, event.threadID, event.messageID);
               }
             }
           }
